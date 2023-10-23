@@ -3,8 +3,10 @@ package ie.atu;
 public class Main {
     public static void main(String[] args){
         //Create a new person object
-        Person johnDoe=new Person("Choon Xiang","Yeoh",30);
+        Person user=new Person();
+        //Get user input
+        user.getUserInput();
         //Call the displayInfo method
-        johnDoe.displayInfo();
+        user.displayInfo();
     }
 }

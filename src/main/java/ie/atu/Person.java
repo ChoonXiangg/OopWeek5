@@ -1,9 +1,9 @@
 package ie.atu;
 import java.util.Scanner;
 public class Person {
-    String firstName;
-    String lastName;
-    int age;
+    private String firstName;
+    private String lastName;
+    private int age;
     //Default constructor to initialize default values
     public Person(){
         this.firstName="John";
@@ -26,7 +26,35 @@ public class Person {
         System.out.print("Enter age: ");
         this.age=scanner.nextInt();
     }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
     public void displayInfo(){
+        getFirstName();
+        getLastName();
+        getAge();
         System.out.println("name: "+firstName+" "+lastName+", Age: "+age);
     }
 }
